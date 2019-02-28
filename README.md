@@ -1,6 +1,6 @@
 # Laravel Anonymised SQL dumps
 
-Essentially a wrapper around [https://github.com/ifsnop/mysqldump-php](ifsnop/mysqldump-php) that allows you to specify what columns to anonymise using [https://github.com/fzaninotto/Faker](Faker)
+Essentially a wrapper around [ifsnop/mysqldump-php](https://github.com/ifsnop/mysqldump-php) that allows you to specify what columns to anonymise using [Faker](https://github.com/fzaninotto/Faker)
 
 Helpful tool to debug production DBs while staying GDPR compliant.
 
