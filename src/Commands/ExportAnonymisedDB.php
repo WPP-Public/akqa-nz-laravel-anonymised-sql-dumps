@@ -124,7 +124,6 @@ class ExportAnonymisedDB extends Command
     private function handleJSONColumns(array $jsonConfig, array $jsonValue): string
     {
         foreach ($jsonValue as $column => $value) {
-            echo $column . "\n";
             if (isset($jsonConfig[$column])) {
                 $fakerType = $jsonConfig[$column];
                 $jsonValue[$column] = $this->faker->{$fakerType};
