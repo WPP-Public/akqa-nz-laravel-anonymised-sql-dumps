@@ -1,0 +1,32 @@
+{
+  "name": "heyday/laravel-anonymised-sql-dumps",
+  "description": "Generate anonymised SQL dumps for Laravel. Wrapper for ifsnop/mysqldump-php",
+  "keywords": [
+    "heyday",
+    "gdpr",
+    "laravel-anonymised-sql-dumps"
+  ],
+  "homepage": "https://github.com/heyday/laravel-anonymised-sql-dumps",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ben Dubuisson",
+      "email": "ben.dubuisson@heyday.co.nz",
+      "homepage": "https://www.heyday.co.nz",
+      "role": "Lead Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "ifsnop/mysqldump-php": "^2.6",
+    "fzaninotto/faker": "~1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Heyday\\AnonymisedSQLDumps\\": "src"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
