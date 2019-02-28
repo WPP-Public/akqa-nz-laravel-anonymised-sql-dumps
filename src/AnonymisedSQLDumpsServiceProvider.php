@@ -3,6 +3,7 @@
 namespace Heyday\AnonymisedSQLDumps;
 
 use Illuminate\Support\ServiceProvider;
+use Heyday\AnonymisedSQLDumps\Commands\ExportAnonymisedDB;
 
 class AnonymisedSQLDumpsServiceProvider extends ServiceProvider
 {
@@ -18,7 +19,7 @@ class AnonymisedSQLDumpsServiceProvider extends ServiceProvider
             ], 'config');
         }
 
-        $this->app->bind('command.snapshot:create', Create::class);
+        $this->app->bind('command.snapshot:create', ExportAnonymisedDB::class);
         $this->commands([
             'command.snapshot:create'
         ]);
