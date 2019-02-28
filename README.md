@@ -68,6 +68,7 @@ The generated .sql file will be available in `storage/dbdumps`.
 
 ## TODO
 
-* Make the DB connection optional.
+* Make the DB connection as an option.
+* Make the destination disk/path as an option.
 * Allow more nesting for JSON columns.
 * Automatic detection of common fields? (email, address, name, etc...)
